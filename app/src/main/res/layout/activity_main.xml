@@ -20,6 +20,15 @@
         tools:text="Hello World!"
         android:layout_centerHorizontal="true"/>
 
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:src="@mipmap/ic_launcher"/>
+
     <Button
         android:id="@+id/btn_click"
         android:layout_width="match_parent"
