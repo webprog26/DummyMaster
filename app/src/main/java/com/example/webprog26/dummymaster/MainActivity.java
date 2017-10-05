@@ -41,7 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_click:
 
+                final String dummyText = getString(R.string.dummy_text);
+                final TextView mainTextView = getTvText();
 
+                String currentText = mainTextView.getText().toString();
+
+                        getTvText().setText((currentText == null || currentText.equals("")) ? dummyText : "");
 
                 break;
         }
